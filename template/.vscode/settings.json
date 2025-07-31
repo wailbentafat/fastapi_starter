@@ -1,5 +1,5 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/backend/venv/bin/python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/template/venv/bin/python",
   "python.analysis.typeCheckingMode": "strict",
   "python.analysis.addHoverSummaries": true,
   "python.analysis.autoSearchPaths": true,
@@ -21,7 +21,7 @@
   "python.analysis.inlayHints.functionParameterTypesEnabled": true,
   "python.languageServer":"Pylance",
   "python.analysis.extraPaths": [
-    "./backend/src"
+    "./template/app"
   ],
 
   "[python]": {
@@ -34,7 +34,7 @@
   },
 
   "ruff.path": [
-    "${workspaceFolder}/backend/venv/bin/ruff"
+    "${workspaceFolder}/template/venv/bin/ruff"
   ],
   "postman.settings.dotenv-detection-notification-visibility": false
 }

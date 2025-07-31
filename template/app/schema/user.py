@@ -7,10 +7,10 @@ class Role(str, Enum):
     USER = "user"
     ADMIN = "admin"
 
-
-class UserCreate(BaseModel):
+class UserLogin(BaseModel):
     email: EmailStr
     password: str
+class UserCreate(UserLogin):
     full_name: Optional[str]
     organization_id: Optional[str]
 
@@ -22,9 +22,7 @@ class UserRead(BaseModel):
     roles: List[Role]
 
 
-class UserLogin(BaseModel):
-    email: EmailStr
-    password: str
+
 
 
 class Token(BaseModel):

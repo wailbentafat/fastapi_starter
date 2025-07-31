@@ -5,7 +5,7 @@ from app.services.auth import authenticate_user, create_access_token, hash_passw
 from app.models.user import User
 from app.deps.auth import get_current_user
 from fastapi.responses import JSONResponse
-from app.core.config import settings
+from app.config import settings
 
 router = APIRouter()
 

@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from app.models.user import User
 from app.schema.user import UserCreate
 from typing import Optional
-from app.core.config import settings
+from app.config import settings
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 SECRET_KEY = settings.JWT_SECRET

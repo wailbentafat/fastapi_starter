@@ -1,6 +1,6 @@
 import stripe
 from app.services.user import update_user_subscription_status
-from app.core.config import settings
+from app.config import settings
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 endpoint_secret = settings.STRIPE_WEBHOOK_SECRET
